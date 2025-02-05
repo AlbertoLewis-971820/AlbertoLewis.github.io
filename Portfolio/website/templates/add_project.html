@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}AddProject{% endblock %}
+
+{% block content %}
+
+    <h1 align="center">Admin Page</h1>
+
+    <!--Create form to add project information-->
+    <div class="container">
+        <form method="POST">
+            <div class="form-group">
+                <label for="name">Project Name:</label>
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="project_link">Link:</label>
+                <input type="text" class="form-control" id="project_link" name="project_link">
+            </div>
+            <br />
+            <button type="submit" class="btn btn-primary">Add Project</button>
+        </form>
+    </div>
+    
+
+{% endblock %}
