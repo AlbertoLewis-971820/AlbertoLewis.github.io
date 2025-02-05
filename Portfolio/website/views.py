@@ -9,7 +9,7 @@ views = Blueprint('views', __name__)
 
 @views.route('/') # Define the route for the home page
 def home():
-    return render_template('home.html') # Render the home.html template
+    return render_template('index.html') # Render the home.html template
 
 @views.route('/projects', methods=['GET', 'POST']) # Define the route for the projects page
 def projects():
